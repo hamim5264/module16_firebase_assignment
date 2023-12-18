@@ -45,17 +45,23 @@ class _HomeScreenState extends State<HomeScreen> {
             trailing: const Icon(Icons.arrow_forward),
             onTap: () {
               Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const SecondScreen()));
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SecondScreen(),
+                ),
+              );
             },
           ),
           ListTile(
             title: Text(match2CollectionRef.path.toString()),
             trailing: const Icon(Icons.arrow_forward),
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const ThirdScreen()));
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ThirdScreen(),
+                ),
+              );
             },
           ),
         ],
